@@ -3,7 +3,7 @@ import CafeInfo from '../CafeInfo/CafeInfo';
 import { useState } from 'react';
 import type { Votes, VoteType } from '../../types/votes';
 import VoteOptions from '../VoteOptions/VoteOptions';
-import VoteStatus from '../VoteStats/VoteStats';
+import VoteStats from '../VoteStats/VoteStats';
 import Notification from '../Notification/Notification';
 
 export default function App() {
@@ -43,7 +43,7 @@ export default function App() {
         canReset={canReset}
       />
       {totalVotes ? (
-        <VoteStatus
+        <VoteStats
           votes={votes}
           totalVotes={totalVotes}
           positiveRate={positiveRate}
